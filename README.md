@@ -1,27 +1,65 @@
-# 🚦 Traffic Flow Prediction App
+ Traffic Flow Prediction
 
-A Flask-based web application that predicts traffic conditions (Smooth, Moderate, or Heavy) using a combination of **geographical data** and **user-entered traffic descriptions** with **machine learning** and **natural language processing (NLP)**.
+ ---
+ 
+This project aims to provide a real-time traffic prediction system that uses geolocation (latitude and longitude) and user-described traffic situations to forecast traffic flow. By integrating machine learning and natural language processing (NLP), the app helps users plan safer and more efficient routes across different locations.
+
+Directions to use this repo:
+1.Clone the repository by running the command git clone https://github.com/JyothsnaDarla/traffic-prediction.git or by downloading .zip
+2.Install the dependencies by running pip install -r requirements.txt
+3.Run the command python app.py
+4.Open your browser and visit:
+http://127.0.0.1:5000/
+
+How It Works
 
 ---
 
-## 📌 Project Overview
+The user enters a city name, optionally a street name, and a traffic-related description (e.g., "construction", "evening rush", "accident near market").
 
-This project provides users with **real-time insights** into traffic conditions across different locations.  
-It combines **geolocation (latitude & longitude)** with **text-based descriptions** (like "road jam due to accident") to deliver accurate traffic predictions.  
+The system extracts the latitude and longitude using the Geopy library.
 
-It also displays traffic flow on an interactive **Folium map** and stores past predictions in a **SQLite database** for reference.
+Two machine learning models are used:
 
----
+A text-based model using TF-IDF and Random Forest
 
-## 🚀 Key Features
+A location-based model using latitude and longitude
 
-- 🧠 ML-based traffic prediction using:
-  - **Geographical coordinates** (latitude & longitude)
-  - **NLP-processed text input**
-- 🌍 Geolocation powered by **Geopy + Nominatim**
-- 🗺 Interactive map with **Folium**
-- 🗃 Data storage with **SQLite**
-- 📜 Clean and simple web interface with **Flask + Jinja2**
-- 📊 Displays historical traffic predictions
+The final prediction combines both model results (and historical data if available) to classify traffic as:
 
+Smooth Traffic
 
+Moderate Traffic
+
+Heavy Traffic
+
+Results are displayed on an interactive map, and also stored in an SQLite database.
+
+ Key Features
+Real-time traffic prediction using both location and description
+
+NLP preprocessing using NLTK
+
+Geolocation with Nominatim (Geopy)
+
+Map visualization using Folium
+
+Historical data tracking via SQLite
+
+Easy-to-use web interface built with Flask
+
+Pages in the App
+Home – Introduction to the application
+
+About – Description of the project and vision
+
+Entry – Form to input traffic details and get prediction
+
+Result – Shows traffic prediction and map
+
+Show – Displays recent predictions for selected location
+
+Objective
+This project aims to reduce traffic-related stress by helping users avoid congested routes. It supports smarter commuting decisions and promotes better traffic flow management using a data-driven approach.
+
+Home page:
