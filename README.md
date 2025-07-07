@@ -24,7 +24,4 @@ It also displays traffic flow on an interactive **Folium map** and stores past p
 - 📜 Clean and simple web interface with **Flask + Jinja2**
 - 📊 Displays historical traffic predictions
 
----
-
-## 📂 Project Structure
 
