@@ -3,12 +3,16 @@
  
 This project aims to provide a real-time traffic prediction system that uses geolocation (latitude and longitude) and user-described traffic situations to forecast traffic flow. By integrating machine learning and natural language processing (NLP), the app helps users plan safer and more efficient routes across different locations.
 
-Directions to use this repo:
-1.Clone the repository by running the command git clone https://github.com/JyothsnaDarla/traffic-prediction.git or by downloading .zip
-2.Install the dependencies by running pip install -r requirements.txt
-3.Run the command python app.py
-4.Open your browser and visit:
-http://127.0.0.1:5000/
+## Directions to use this repo:
+
+- Clone the repository by running:  
+  `git clone https://github.com/JyothsnaDarla/traffic-prediction.git`
+- Install all dependencies:  
+  `pip install -r requirements.txt`
+- Run the application:  
+  `python app.py`
+- Visit the app in your browser:  
+  `http://127.0.0.1:5000/`
 
 ***How It Works***
 ---
