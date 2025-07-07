@@ -15,7 +15,7 @@ This project aims to provide a real-time traffic prediction system that uses geo
   `http://127.0.0.1:5000/`
 
   ## Dataset
-  This project uses a *custom dataset* prepared manually for traffic flow prediction using *Natural Language Processing (NLP)* techniques and Geographical Data.Unlike generic or third-party datasets, ours is crafted to reflect real-world urban traffic conditions.The dataset was created by collecting and annotating traffic-related textual data from various sources (e.g., news articles, traffic reports, social media posts). It includes:location,latitude,longitude,trafficflow,Traffic-related descriptions (e.g., "road blocked due to metro work", "accident near school", "evening rush hour")
+  This project uses a custom dataset prepared manually for traffic flow prediction using Natural Language Processing (NLP) techniques combined with geographical data. Unlike generic or publicly available datasets, this one has been carefully crafted to reflect real-world urban traffic conditions and language patterns. Each record contains a location name, its corresponding latitude and longitude, a textual description of the traffic situation, and a label indicating the severity of traffic flow. The label is marked as 0 for low or smooth traffic and 1 for heavy or congested traffic.
 
 ***How It Works***
 ---
