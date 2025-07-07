@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Home</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Traffic Flow Prediction Using NLP</h1>
+        <div class="button-container">
+            <a href="{{ url_for('entry') }}" class="big-button">Entry</a>
+            <a href="{{ url_for('show') }}" class="big-button">Show</a>
+        </div>
+    </div>
+</body>
+</html>

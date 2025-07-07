@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Traffic Data</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #d7a306db;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #daae11d7;
+        }
+        .alert {
+             background-color: #f44336; /* Red background */
+            color: white;
+            padding: 10px;
+            margin: 20px auto; /* Center the alert horizontally */
+            border-radius: 5px;
+            text-align: center; /* Center text */
+            width: 80%; /* Control width for centering */
+            max-width: 500px; /* Set a max width */
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+    </nav>
+        <h2 style="text-align: center;">Show Traffic Data</h2>
+        {% if error_message %}
+            <div class="alert">{{ error_message }}</div>
+        {% endif %}
+
+        <form method="POST" style="text-align: center;">
+            <input type="text" name="location" placeholder="Enter Location" required><br>
+            <input type="text" name="street_name" placeholder="Enter Street Name (optional)"><br>
+            <button type="submit">Show Data</button>
+        </form>
+
+        <div style="text-align: center;">
+            {% if data %}
+                <h3>Data for {{ data[0][1] }}{% if data[0][2] %}, Street: {{ data[0][2] }}{% endif %}:</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Location</th>
+                            <th>Street Name</th>
+                            <th>Description</th>
+                            <th>Prediction</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in data %}
+                            <tr>
+                                <td>{{ row[5] }}</td>  <!-- Assuming row[5] is the location -->
+                                <td>{{ row[1] }}</td>  <!-- Assuming row[1] is the street name -->
+                                <td>{{ row[2] or 'N/A' }}</td>  <!-- Assuming row[2] is the timestamp, show 'N/A' if it's None -->
+                                <td>{{ row[3] }}</td>  <!-- Assuming row[3] is another relevant data point -->
+                                <td>{{ row[4] }}</td>  <!-- This should contain 'Smooth', 'Moderate', or 'Heavy' -->
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                    
+                </table>
+            {% else %}
+                <p>No data found.</p>
+            {% endif %}
+        </div>
+</body>
+</html>

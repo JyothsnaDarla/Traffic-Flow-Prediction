@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry Page</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+    </nav>
+   <div class="cont">
+    <h2 style="text-align: center;">Enter Traffic Data</h2>
+    {% if error_message %}
+    <div class="alert alert-danger">{{ error_message }}</div>
+{% endif %}
+
+    <form method="POST" style="text-align: center;">
+        <input type="text" name="location" placeholder="Location" required><br>
+        <input type="text" name="street_name" placeholder="Street Name (Optional)"><br>
+        <textarea name="description" placeholder="Description" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Traffic Prediction Results</h2>
+        <p><strong>Location:</strong> {{ location }}</p>
+        <p><strong>Geographical Model Prediction:</strong> {{ "Smooth Traffic" if geo_prediction == 0 else "Heavy Traffic" }}</p>
+        <p><strong>Textual Model Prediction:</strong> {{ "Smooth Traffic" if text_prediction == 0 else "Heavy Traffic" }}</p>
+        <p><strong>Final Prediction:</strong> {{ traffic_status }}</p>
+        
+        <h3>Traffic Map</h3>
+        <iframe src="{{ url_for('static', filename='map.html') }}" width="100%" height="500px"></iframe>
+    </div>
+</body>
+</html>

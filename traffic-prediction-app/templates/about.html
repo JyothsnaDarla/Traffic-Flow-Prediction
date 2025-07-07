@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Traffic Flow Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Introduction to the Project</h2>
+        <p>Our Traffic Flow Prediction project provides users with real-time insights into traffic conditions across various locations. Using a combination of geographical data and natural language processing (NLP), this tool helps users make informed decisions to plan safer and more efficient routes.</p>
+
+        <h2>What Makes Our Project Unique</h2>
+        <p>This project stands out by integrating location-based data with text descriptions of traffic conditions to create a comprehensive traffic flow forecast. Whether it’s daily commuting or planning around peak traffic times, our prediction tool offers valuable, location-specific traffic insights that go beyond standard traffic maps.</p>
+
+        <h2>How the Project Works</h2>
+        <ul>
+            <li><strong>Enter Location Details:</strong> Begin by entering a city name, and optionally, a specific street within the city where you’d like to predict traffic flow.</li>
+            <li><strong>Provide a Traffic Description:</strong> Add any known details about the traffic situation (e.g., "morning rush hour" or "road construction") to refine the prediction.</li>
+            <li><strong>Receive a Customized Prediction:</strong> Click on "entry," and the system will analyze both the location and text input to provide a prediction on whether traffic is likely to be heavy or smooth.</li>
+            <li><strong>Show:</strong>Show Traffic Data Page: Users can search for traffic data by entering a location (and optionally a street name). Upon form submission, the application queries the database (or another data source) and displays matching records in a table format. If no data is found, an error message is shown.</li>
+        </ul>
+
+        <h2>Values and Vision</h2>
+        <p>Our goal is to make commuting easier by giving users the tools to avoid high-traffic areas and select better routes. Through accurate predictions, we aim to support smarter, safer travel decisions and contribute to reduced congestion.</p>
+
+        <h2>Explore Our Features</h2>
+        <p>Give our app a try and experience personalized traffic flow insights that adapt to your specific location and traffic description.</p>
+    </div>
+</body>
+</html>
