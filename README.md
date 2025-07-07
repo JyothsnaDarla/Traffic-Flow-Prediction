@@ -65,3 +65,5 @@ This project aims to reduce traffic-related stress by helping users avoid conges
 Home page:
 ![Image](https://github.com/user-attachments/assets/1015e9e0-5fd5-4007-ac21-b059c667f83b)
 Entry page:
+![Image](https://github.com/user-attachments/assets/2576daa0-de5b-4909-96c4-33e4bb107ea9)
+result page:
