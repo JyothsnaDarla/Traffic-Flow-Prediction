@@ -63,3 +63,5 @@ Objective
 This project aims to reduce traffic-related stress by helping users avoid congested routes. It supports smarter commuting decisions and promotes better traffic flow management using a data-driven approach.
 
 Home page:
+![Image](https://github.com/user-attachments/assets/1015e9e0-5fd5-4007-ac21-b059c667f83b)
+Entry page:
