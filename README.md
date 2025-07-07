@@ -46,7 +46,7 @@ Shows traffic prediction and map
 ![Image](https://github.com/user-attachments/assets/ac152ec3-a3c7-4216-b31f-0c058d8421ad)
 **show page:**
 Displays recent predictions for selected location
-![Image](https://github.com/user-attachments/assets/ccb5c4ac-23cf-4d50-93fc-c738915c9b08)
+![Image](https://github.com/user-attachments/assets/d2c283e5-b2c3-4aba-9510-82d9d380d63a)
 
 **Objective:**
 ---
