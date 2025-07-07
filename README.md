@@ -14,6 +14,9 @@ This project aims to provide a real-time traffic prediction system that uses geo
 - Visit the app in your browser:  
   `http://127.0.0.1:5000/`
 
+  ## Dataset
+  This project uses a *custom dataset* prepared manually for traffic flow prediction using *Natural Language Processing (NLP)* techniques and Geographical Data.Unlike generic or third-party datasets, ours is crafted to reflect real-world urban traffic conditions.The dataset was created by collecting and annotating traffic-related textual data from various sources (e.g., news articles, traffic reports, social media posts). It includes:location,latitude,longitude,trafficflow,Traffic-related descriptions (e.g., "road blocked due to metro work", "accident near school", "evening rush hour")
+
 ***How It Works***
 ---
 
