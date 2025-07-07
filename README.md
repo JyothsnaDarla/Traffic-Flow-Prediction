@@ -43,7 +43,7 @@ Form to input traffic details and get prediction
 ![Image](https://github.com/user-attachments/assets/423d346f-87f1-4bdc-a73b-4550aef8f531)
 **result page:**
 Shows traffic prediction and map
-![Image](https://github.com/user-attachments/assets/a9025736-fe2c-4d5c-913e-1c5feb98af9d)
+![Image](https://github.com/user-attachments/assets/ac152ec3-a3c7-4216-b31f-0c058d8421ad)
 **show page:**
 Displays recent predictions for selected location
 ![Image](https://github.com/user-attachments/assets/ccb5c4ac-23cf-4d50-93fc-c738915c9b08)
