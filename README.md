@@ -43,5 +43,7 @@ Shows traffic prediction and map
 **show page:**
 Displays recent predictions for selected location
 ![Image](https://github.com/user-attachments/assets/ccb5c4ac-23cf-4d50-93fc-c738915c9b08)
-**Objective**
+
+**Objective:**
+---
 This project aims to reduce traffic-related stress by helping users avoid congested routes. It supports smarter commuting decisions and promotes better traffic flow management using a data-driven approach.
