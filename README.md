@@ -40,7 +40,7 @@ Introduction to the application
 ![Image](https://github.com/user-attachments/assets/1015e9e0-5fd5-4007-ac21-b059c667f83b)
 **Entry page:**
 Form to input traffic details and get prediction
-![Image](https://github.com/user-attachments/assets/88f5b6e5-45e0-4654-9ed8-77d60f9d0ea9)
+![Image](https://github.com/user-attachments/assets/423d346f-87f1-4bdc-a73b-4550aef8f531)
 **result page:**
 Shows traffic prediction and map
 ![Image](https://github.com/user-attachments/assets/a9025736-fe2c-4d5c-913e-1c5feb98af9d)
