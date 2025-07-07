@@ -1,0 +1,8 @@
+Flask
+folium
+geopy
+scikit-learn
+pandas
+nltk
+numpy
+pytz
