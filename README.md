@@ -1,7 +1,7 @@
  ***Traffic Flow Prediction***
  ---
  
-This project aims to provide a real-time traffic prediction system that uses geolocation (latitude and longitude) and user-described traffic situations to forecast traffic flow. By integrating machine learning and natural language processing (NLP), the app helps users plan safer and more efficient routes across different locations.
+This project aims to provide a real-time traffic prediction system that uses geolocation (latitude and longitude) and user-described traffic situations to forecast traffic flow. By integrating machine learning and natural language processing (NLP). This helps users plan safer and more efficient routes across different locations.
 
 ## Directions to use this repo:
 
